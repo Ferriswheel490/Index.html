@@ -1,1 +1,67 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fairus De La Cruz's Home Page</title>
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark and Light Mode Example</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222222;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            --bg-color: #222222;
+            --text-color: #ffffff;
+        }
+        .toggle-btn {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            background: #888;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+<body>
+    <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</button>
+    <h1>Welcome!</h1>
+    <p>This page supports dark and light mode.</p>
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
+<hr />
+<h2>Projects</h2>
+<hr />
+<h2>Practice Assignments</h2>
+<a href="/Spring2016/practice/HTML1/practice1.htm">Practice 1</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/Fall2015/practice/ExpWeb1/circle.html">Practice 2</a>
+
+<hr />
+<h2>Book Assignments</h2>
+
+</body>
+</html>
+
