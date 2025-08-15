@@ -14,54 +14,50 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             transition: background 0.3s, color 0.3s;
+            margin: 0;
         }
         body.dark-mode {
             background-color: #000000;
             color: #ffffff;
         }
+
+        /* Toggle Button Style */
         .toggle-btn {
-            position: center;
-            top: 1rem;
-            right: 1rem;
+            position: fixed; /* stays on screen even when scrolling */
+            top: 1rem;       /* distance from top */
+            right: 1rem;     /* distance from right */
             padding: 0.5rem 1rem;
             background: #888;
-            color: #ffff;
+            color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-box-shadow: 0 9px #999
+            box-shadow: 0 4px #666;
+            font-weight: bold;
         }
-.button:active {
-background-color: #ffff;
-box-shadow: 0 5px #888;
-transform: translateY(4px);
-}
-.button {
-position: relative;
-border: none;
-transition-duration: 0.4s;
-text-decoration: none;
-overflow: hidden;
-cursor: pointer;
-}
+        .toggle-btn:active {
+            box-shadow: 0 2px #444;
+            transform: translateY(2px);
+        }
     </style>
 </head>
 <body>
-    <button class="button" class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</button>
+    <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</button>
+
     <div>
         <h1>Home Page for Fairus De La Cruz</h1>
         <hr />
         <h2>Projects</h2>
         <hr />
         <h2>Practice Assignments</h2>
-        <a href="HTML1/start.htm">Start</a>
+        <!-- Link now points directly to start.html -->
+        <a href="file:///C:/Users/fairu/OneDrive/Desktop/Homework/start/start/start.html">Start</a>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="/Fall2015/practice/ExpWeb1/circle.html">Practice 2</a>
-&nbsp;&nbsp;|&nbsp;&nbsp;
-<button class="button" href="HTML1/start.htm">Start</button>
         <hr />
         <h2>Book Assignments</h2>
     </div>
+
     <script>
         function toggleMode() {
             document.body.classList.toggle('dark-mode');
